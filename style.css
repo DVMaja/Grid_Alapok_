@@ -1,0 +1,67 @@
+body{
+    background-color: black;
+    color: white;margin: 0;
+    /*text-align: justify;*/
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+/* A menü formázása + linkek*/
+#menu{
+    width: 100%;
+    background-color: rgb(40, 40, 40);
+    margin: 0;
+    
+}
+#menu ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    list-style-type: none;
+    margin: 0;
+}
+#menu a{
+    text-decoration: none;
+    color: white;
+}
+#menu a:visited{
+    color: aqua;
+}
+#menu a:hover{
+    color: red;
+}
+#menu a:active{
+    color: grey;
+}
+/*A dobozok formázása*/
+#container{
+    background-color: rgb(40, 40, 40);
+    width: 80%;
+    max-width: 880px;
+    margin: 0 auto 0 auto;
+}
+.tartalom{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.class{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.cikk h2{
+    text-align: center;    
+}
+.cikk img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*A képek formázása*/
+img{
+    max-width: calc(50% - 20%);    
+}
+.abra{
+    max-width: calc(90% - 5%);
+}
