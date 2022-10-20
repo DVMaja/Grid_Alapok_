@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color: rgb(40, 40, 40);
     color: white;margin: 0;
     /*text-align: justify;*/
 }
@@ -18,7 +18,7 @@ h1{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     list-style-type: none;
-    margin: 0;
+    margin: 0;    
 }
 #menu a{
     text-decoration: none;
@@ -40,10 +40,48 @@ h1{
     max-width: 880px;
     margin: 0 auto 0 auto;
 }
+/*Első rész formázása*/
 .tartalom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    gap: 10px;    
+}
+.tartalom ul{
+    list-style: url(kepek/felsor.png);
+}
+.tartalom2{
+    background-color: black;
+    text-align: justify;    
+}
+/*Harmadik rész formázás*/
+.tartalom3{
+    text-align: center;
+    background-color: black;
+}
+.cikknegyes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}    
+.cikknegyes ul{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+.cikknegyes a{
+    text-decoration: none;
+    color: white;
+}
+.cikknegyes p{
+    font-style: italic;
+}
+.kollegak{
+    display: grid;    
+    grid-template-rows: 100px 100px 100px;
+}
+.kollega{
+    max-width: calc(50% -20%); 
+    border-radius: 50%;   
+    border: 5px solid cornflowerblue;
 }
 .class{
     display: grid;
@@ -52,16 +90,16 @@ h1{
 .cikk h2{
     text-align: center;    
 }
-.cikk img{
+.cikk > img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 /*A képek formázása*/
-img{
-    max-width: calc(50% - 20%);    
+.kollegak img{
+    max-width: calc(60% - 20%);    
 }
-.abra{
-    max-width: calc(90% - 5%);
+#abra{
+    width: 100%
 }
