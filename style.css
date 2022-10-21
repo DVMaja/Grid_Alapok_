@@ -1,11 +1,16 @@
 body{
     background-color: rgb(40, 40, 40);
     color: white;margin: 0;
+    font-family: "Berlin Sans FB Demi", Arial, Helvetica, sans-serif;
     /*text-align: justify;*/
 }
 h1{
     text-align: center;
     font-size: 50px;
+    font-weight: bolder;
+}
+.cikk h2{
+    text-align: center;    
 }
 /* A menü formázása + linkek*/
 #menu{
@@ -23,6 +28,7 @@ h1{
 #menu a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 #menu a:visited{
     color: aqua;
@@ -33,6 +39,8 @@ h1{
 #menu a:active{
     color: grey;
 }
+/*menü vége*/
+
 /*A dobozok formázása*/
 #container{
     background-color: rgb(40, 40, 40);
@@ -44,62 +52,71 @@ h1{
 .tartalom{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;    
+    gap: 10px;
+}
+.cikk{
+    padding: 10px 15px 10px 15px;
+    
+}
+#kozep{
+    border: 2px solid red;
+    border-style: none solid none solid;
 }
 .tartalom ul{
     list-style: url(kepek/felsor.png);
 }
-.tartalom2{
-    background-color: black;
-    text-align: justify;    
-}
-/*Harmadik rész formázás*/
-.tartalom3{
-    text-align: center;
-    background-color: black;
-}
-.cikknegyes{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}    
-.cikknegyes ul{
-    list-style-type: none;
-    margin: 0;
-    text-align: center;
-}
-.cikknegyes a{
-    text-decoration: none;
-    color: white;
-}
-.cikknegyes p{
-    font-style: italic;
-}
-.kollegak{
-    display: grid;    
-    grid-template-rows: 100px 100px 100px;
-}
-.kollega{
-    max-width: calc(50% -20%); 
-    border-radius: 50%;   
-    border: 5px solid cornflowerblue;
-}
-.class{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.cikk h2{
-    text-align: center;    
-}
-.cikk > img{
+.cikk  img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-/*A képek formázása*/
-.kollegak img{
-    max-width: calc(60% - 20%);    
+
+/*Második rész formázása*/
+.tartalom2{
+    background-color: black;
+    text-align: justify;
+}
+.class{
+    display: grid;
+    grid-template-columns: 1fr 1fr;    
 }
 #abra{
     width: 100%
 }
+
+/*Harmadik rész formázás*/
+.tartalom3{
+    text-align: center;
+    background-color: black;
+}
+.cikk3{
+    display: grid;    
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;  
+    text-align: center;
+}   
+.cikk3 ul{
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+}
+
+.cikk3 a{
+    text-decoration: none;
+    color: white;
+}
+.cikk3 p{
+    font-style: italic;
+}
+.elerhetoseg{
+    
+}
+/* 3. block képei*/
+.kollega{
+    max-width: calc(50% -20%); 
+    border-radius: 50%;   
+    border: 2px solid red;
+    max-width: calc(60% - 20%);
+}
+
