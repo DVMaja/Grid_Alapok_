@@ -1,71 +1,96 @@
-body{
+body {
     background-color: rgb(40, 40, 40);
-    color: white;margin: 0;
+    color: white;
+    margin: 0;
     font-family: "Berlin Sans FB Demi", Arial, Helvetica, sans-serif;
     /*text-align: justify;*/
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height: 1.3;
 }
-h1{
+
+h1 {
     text-align: center;
     font-size: 50px;
     font-weight: bolder;
 }
-.cikk h2{
-    text-align: center;    
+
+h2 {
+    border: 2px solid red;
+    border-style: none none solid none;
+    font-size: 50px;
+    font-weight: bolder;
 }
+
+.cikk h3 {
+    text-align: center;
+}
+
 /* A menü formázása + linkek*/
-#menu{
+#menu {
     width: 100%;
     background-color: rgb(40, 40, 40);
     margin: 0;
-    
+
 }
-#menu ul{
+
+#menu ul {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     list-style-type: none;
-    margin: 0;    
+    margin: 0;
 }
-#menu a{
+
+#menu a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
-#menu a:visited{
+
+#menu a:visited {
     color: aqua;
 }
-#menu a:hover{
+
+#menu a:hover {
     color: red;
 }
-#menu a:active{
+
+#menu a:active {
     color: grey;
 }
+
 /*menü vége*/
 
 /*A dobozok formázása*/
-#container{
+#container {
     background-color: rgb(40, 40, 40);
     width: 80%;
     max-width: 880px;
     margin: 0 auto 0 auto;
 }
+
 /*Első rész formázása*/
-.tartalom{
+.tartalom {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
+    padding: 10px;
 }
-.cikk{
+
+.cikk {
     padding: 10px 15px 10px 15px;
-    
 }
-#kozep{
+
+#kozep {
     border: 2px solid red;
     border-style: none solid none solid;
 }
-.tartalom ul{
+
+.tartalom ul {
     list-style: url(kepek/felsor.png);
 }
-.cikk  img{
+
+.cikk img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -73,50 +98,63 @@ h1{
 }
 
 /*Második rész formázása*/
-.tartalom2{
+.tartalom2 {
     background-color: black;
-    text-align: justify;
+    padding: 10px;
 }
-.class{
+
+.tartalom2 p {
+    text-align: left;
+}
+
+.class {
     display: grid;
-    grid-template-columns: 1fr 1fr;    
+    grid-template-columns: 1fr 1fr;
 }
-#abra{
+
+#abra {
     width: 100%
 }
 
 /*Harmadik rész formázás*/
-.tartalom3{
+.tartalom3 {
     text-align: center;
     background-color: black;
 }
-.cikk3{
-    display: grid;    
+
+.cikk3 {
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;  
-    text-align: center;
-}   
-.cikk3 ul{
+    grid-template-rows: 100px 100px 100px;
+    padding: 10px;
+}
+.cikk3 ul {
     list-style-type: none;
     margin: 0;
-    text-align: center;
+    padding: 5PX;
+    
+}
+.cikk3 li {
+    border: 2px solid rgb(0, 80, 151);
+    border-radius: 5px;
+    background-color: rgb(0, 80, 151);
 }
 
-.cikk3 a{
+.cikk3 a {
     text-decoration: none;
     color: white;
 }
-.cikk3 p{
+
+.cikk3 p {
     font-style: italic;
 }
-.elerhetoseg{
-    
-}
+
 /* 3. block képei*/
-.kollega{
-    max-width: calc(50% -20%); 
-    border-radius: 50%;   
+.kollega {    
+    max-width: calc(50% -20%);
+    border-radius: 50%;
     border: 2px solid red;
     max-width: calc(60% - 20%);
 }
 
+/*Responsiviti*/
