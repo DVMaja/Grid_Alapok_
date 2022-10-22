@@ -1,7 +1,8 @@
 body {
     background-color: rgb(40, 40, 40);
     color: white;
-    margin: 0;
+    margin: 0%;
+    padding: 0;
     font-family: "Berlin Sans FB Demi", Arial, Helvetica, sans-serif;
     /*text-align: justify;*/
     letter-spacing: 1px;
@@ -66,7 +67,8 @@ h2 {
     background-color: rgb(40, 40, 40);
     width: 80%;
     max-width: 880px;
-    margin: 0 auto 0 auto;
+    margin: auto;
+    padding: 0;
 }
 
 /*Első rész formázása*/
@@ -128,14 +130,14 @@ h2 {
     grid-template-rows: 100px 100px 100px;
     padding: 10px;
 }
+
 .cikk3 ul {
     list-style-type: none;
     margin: 0;
     padding: 5PX;
-    
 }
+
 .cikk3 li {
-    border: 2px solid rgb(0, 80, 151);
     border-radius: 5px;
     background-color: rgb(0, 80, 151);
 }
@@ -150,11 +152,76 @@ h2 {
 }
 
 /* 3. block képei*/
-.kollega {    
-    max-width: calc(50% -20%);
+.kollega {
+    max-width: calc(50% - 20%);
     border-radius: 50%;
     border: 2px solid red;
     max-width: calc(60% - 20%);
 }
 
 /*Responsiviti*/
+@media only screen and (max-width: 600px) {
+    #menu ul {
+        max-width: 100%;
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    #container {
+        max-width: 100%;
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: 1fr;
+
+    }
+
+    .tartalom {
+        max-width: 100%;
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: 1fr;
+    }
+
+    .class {
+        max-width: 100%;
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: 1fr;
+    }
+
+    #kozep {
+        border: none;
+    }
+
+    .tartalom2 {
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: 1fr;
+        background-color: rgb(40, 40, 40);
+    }
+
+    .tartalom3 {
+        max-width: 100%;
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: 1fr;
+        background-color: rgb(40, 40, 40);
+    }
+
+    .kollega {
+        max-width: 100%;
+        width: 100%;
+        font-size: 6vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .cikk3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+}
